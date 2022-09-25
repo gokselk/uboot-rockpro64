@@ -41,7 +41,7 @@ prepare() {
 build() {
   cd ${srcdir}/u-boot-${pkgver}
 
-  unset CLFAGS CXXFLAGS CPPFLAGS LDFLAGS
+  unset CFLAGS CXXFLAGS CPPFLAGS LDFLAGS
 
   make rockpro64-rk3399_defconfig
   make EXTRAVERSION=-${pkgrel}
